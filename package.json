@@ -1,0 +1,26 @@
+{
+  "name": "@kawai/cookie-utils",
+  "version": "1.0.0",
+  "description": "Some basic function for cookie",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "cookie"
+  ],
+  "author": "kawaizombi",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.25.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
+  }
+}
