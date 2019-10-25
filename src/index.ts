@@ -1,7 +1,7 @@
 import { Attrs, Jar } from './@types';
 
 function buildAttributeString(attrs: Attrs) {
-  if(attrs.expires instanceof Date) {
+  if (attrs.expires instanceof Date) {
     attrs.expires = attrs.expires.toUTCString();
   }
 
@@ -36,5 +36,5 @@ export function setCookie(name: string, value: string, attrs: Attrs = {}) {
 }
 
 export function removeCookie(name: string) {
-  setCookie(name, '', new Date(0));
+  setCookie(name, '', { expires: new Date(-1) });
 }

@@ -10,7 +10,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "jest"
   },
   "keywords": [
     "cookie"
@@ -18,8 +19,11 @@
   "author": "kawaizombi",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
     "rollup": "^1.25.2",
     "rollup-plugin-typescript2": "^0.24.3",
+    "ts-jest": "^24.1.0",
     "tslib": "^1.10.0",
     "typescript": "^3.6.4"
   }
