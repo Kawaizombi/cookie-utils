@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "prepublish": "npm run build",
+    "prepack": "npm run build",
     "test": "jest"
   },
   "keywords": [
